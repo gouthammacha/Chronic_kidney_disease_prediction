@@ -28,7 +28,7 @@ function Home() {
             Early Detection Saves Lives
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-            Advanced AI-powered kidney disease prediction system
+            Advanced AI-powered chronic kidney disease prediction system
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
