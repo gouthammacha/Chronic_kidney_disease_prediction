@@ -1,5 +1,6 @@
 flask
 pymongo
 numpy
-scikit-learn
+gunicorn
+scikit-learn==1.5.2
 flask_cors
