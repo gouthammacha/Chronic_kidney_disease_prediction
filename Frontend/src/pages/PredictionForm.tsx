@@ -90,7 +90,7 @@ function PredictionForm() {
     setPrediction("");
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/predict', formData);
+      const response = await axios.post('https://chronic-kidney-disease-prediction-5kye.onrender.com/predict', formData);
       setPrediction(response.data.prediction);
       setShowSummary(false);
     } catch (error) {
