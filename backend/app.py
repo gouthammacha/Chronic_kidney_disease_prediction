@@ -49,7 +49,7 @@ def predict():
             prediction = model.predict(features)
             prediction_result = prediction.item()  # Convert to native Python int
 
-            prediction_label = "NO CKD" if prediction_result == 1 else "CKD"
+            prediction_label = "CKD" if prediction_result == 1 else "NO CKD"
 
             return jsonify({'prediction': prediction_label, 'message': 'Data already exists'})
 
@@ -66,7 +66,7 @@ def predict():
         prediction_result = prediction.item()  # Convert to native Python int
 
         # Map the prediction to "CKD" or "NO CKD"
-        prediction_label = "NO CKD" if prediction_result == 1 else "CKD"
+        prediction_label = "CKD" if prediction_result == 1 else "NO CKD"
 
         # Add the prediction result to the data dictionary
         data['prediction'] = prediction_label
